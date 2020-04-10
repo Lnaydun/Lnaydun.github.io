@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Página de prueba<title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-  <h1>Hola amiguitos!</h1>
-  <footer>gpuma 2017</footer>
+<div id='map' style='width: 100%; height: 600px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zZXBodG9kZDEyOTIiLCJhIjoiY2piaWpwY2RpMm91YjJ2bXg5dW5hcm82dSJ9.CXSS2MPN7PnfJN26HorU5w';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
 </body>
 </html>
